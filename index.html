@@ -19,8 +19,8 @@
 			    <label for="filterName">Filter by Name</label>
 			    <input type="test" class="form-control" ng-model="name" id="exampleInputEmail1" placeholder="Nombre" name="filterName">
 			  </div>
-			<div class="row" ng-repeat="card in cards | limitTo: 50 | filter: name>
-				<div class="col-md-12" ng-if="type !='HERO_POWER'">
+			<div class="row" ng-repeat="card in cards | limitTo: 50 | filter: name">
+				<div class="col-md-12">
 					<h3 title="{{card.type}}">{{card.name}}</h3>
 					<img alt="{{card.name}}" src="http://wow.zamimg.com/images/hearthstone/cards/enus/small/{{card.id}}.png"/>
 				</div>
